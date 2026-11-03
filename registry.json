@@ -1,13 +1,17 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "xxnnyy-ui",
+  "homepage": "https://acme.com",
   "items": [
     {
       "name": "utils",
       "type": "registry:lib",
       "title": "Utilities",
       "description": "Shared class name utility used by xxnnyy UI components.",
-      "dependencies": ["clsx@^2.1.1", "tailwind-merge@^3.7.0"],
+      "dependencies": [
+        "clsx@^2.1.1",
+        "tailwind-merge@^3.7.0"
+      ],
       "files": [
         {
           "path": "packages/ui/src/lib/utils.ts",
@@ -21,13 +25,17 @@
       "type": "registry:ui",
       "title": "Button",
       "description": "Accessible button with variants, sizes, loading state, and Radix Slot composition.",
-      "registryDependencies": ["@xxnnyy/utils"],
+      "registryDependencies": [
+        "@xxnnyy/utils"
+      ],
       "dependencies": [
         "@radix-ui/react-slot@^1.5.0",
         "class-variance-authority@^0.7.1"
       ],
       "cssVars": {
-        "theme": { "radius": "0.625rem" },
+        "theme": {
+          "radius": "0.625rem"
+        },
         "light": {
           "background": "oklch(1 0 0)",
           "foreground": "oklch(0.145 0 0)",
@@ -74,9 +82,13 @@
       "type": "registry:ui",
       "title": "Input",
       "description": "Styled native input with focus, disabled, and invalid states.",
-      "registryDependencies": ["@xxnnyy/utils"],
+      "registryDependencies": [
+        "@xxnnyy/utils"
+      ],
       "cssVars": {
-        "theme": { "radius": "0.625rem" },
+        "theme": {
+          "radius": "0.625rem"
+        },
         "light": {
           "background": "oklch(1 0 0)",
           "foreground": "oklch(0.145 0 0)",
@@ -123,9 +135,13 @@
       "type": "registry:ui",
       "title": "Card",
       "description": "Composable card primitives for grouping related content.",
-      "registryDependencies": ["@xxnnyy/utils"],
+      "registryDependencies": [
+        "@xxnnyy/utils"
+      ],
       "cssVars": {
-        "theme": { "radius": "0.625rem" },
+        "theme": {
+          "radius": "0.625rem"
+        },
         "light": {
           "background": "oklch(1 0 0)",
           "foreground": "oklch(0.145 0 0)",
@@ -158,10 +174,17 @@
       "type": "registry:ui",
       "title": "Checkbox",
       "description": "Accessible checkbox built on Radix UI.",
-      "registryDependencies": ["@xxnnyy/utils"],
-      "dependencies": ["radix-ui@^1.8.1", "lucide-react@^1.66.0"],
+      "registryDependencies": [
+        "@xxnnyy/utils"
+      ],
+      "dependencies": [
+        "radix-ui@^1.8.1",
+        "lucide-react@^1.66.0"
+      ],
       "cssVars": {
-        "theme": { "radius": "0.625rem" },
+        "theme": {
+          "radius": "0.625rem"
+        },
         "light": {
           "background": "oklch(1 0 0)",
           "foreground": "oklch(0.145 0 0)",

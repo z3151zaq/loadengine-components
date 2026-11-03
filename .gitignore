@@ -13,6 +13,7 @@ coverage/
 .cache/
 .vite/
 storybook-static/
+public/r
 
 # Environment variables and secrets
 .env
