@@ -1,5 +1,5 @@
 
-import { Button } from "@registry/ui/button";
+import { Button } from "@le-components/ui";
 
 export function ButtonDemo() {
   return (

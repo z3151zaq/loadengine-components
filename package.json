@@ -1,7 +1,7 @@
 {
   "name": "le-components",
   "version": "1.0.0",
-  "description": "",
+  "description": "A workspace for copyable UI components and their documentation.",
   "main": "index.js",
   "scripts": {
     "dev": "pnpm --filter docs dev",
