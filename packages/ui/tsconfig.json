@@ -6,12 +6,8 @@
     "moduleResolution": "Bundler",
     "strict": true,
     "skipLibCheck": true,
-    "noEmit": true,
-    "paths": {
-      "@/*": [
-        "./*"
-      ]
-    }
+    "ignoreDeprecations": "6.0",
+    "noEmit": true
   },
   "include": [
     "src"
