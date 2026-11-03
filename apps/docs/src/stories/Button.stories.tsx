@@ -2,7 +2,7 @@ import type { ComponentProps } from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { ArrowRight, Plus, Save, Trash2 } from "lucide-react";
 import { fn } from "storybook/test";
-import { Button } from "@le-components/ui";
+import { Button } from "@xxnnyy/ui";
 
 const meta = {
   title: "Components/Button",

@@ -215,7 +215,7 @@ importers:
 
   apps/docs:
     dependencies:
-      '@le-components/ui':
+      '@xxnnyy/ui':
         specifier: workspace:*
         version: link:../../packages/ui
       react:

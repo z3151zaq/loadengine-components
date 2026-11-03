@@ -1,18 +1,18 @@
-# @le-components/ui
+# @xxnnyy/ui
 
 React UI components built with Radix UI and Tailwind CSS.
 
 ## Install
 
 ```bash
-pnpm add @le-components/ui react react-dom
+pnpm add @xxnnyy/ui react react-dom
 ```
 
 Import the components and the compiled theme stylesheet in your app entry:
 
 ```tsx
-import { Button, Input } from "@le-components/ui";
-import "@le-components/ui/styles.css";
+import { Button, Input } from "@xxnnyy/ui";
+import "@xxnnyy/ui/styles.css";
 
 export function Example() {
   return (
