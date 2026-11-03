@@ -79,7 +79,7 @@ export const Sizes: Story = {
   render: (args: ButtonStoryArgs) => (
     <div className="flex flex-wrap items-center gap-3">
       <Button {...args} size="sm">Small</Button>
-      <Button {...args} size="md">Default</Button>
+      <Button {...args} size="default">Default</Button>
       <Button {...args} size="lg">Large</Button>
       <Button {...args} size="icon" aria-label="Add deal"><Plus /></Button>
     </div>
