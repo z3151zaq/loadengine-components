@@ -30,6 +30,7 @@ pnpm-debug.log*
 # Local tool state
 .eslintcache
 .stylelintcache
+.pnpm-store
 
 # Editor and operating system files
 .DS_Store
