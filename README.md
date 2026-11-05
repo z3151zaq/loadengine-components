@@ -110,5 +110,6 @@ Cloudflare Pages serves the introduction page from `/` and Storybook from `/stor
 | Root directory | `/` (repository root) |
 | Build command | `pnpm build` |
 | Build output directory | `apps/docs/dist` |
+| Environment variable | `PNPM_VERSION=12.16.1` |
 
-The workspace build compiles the UI package first, then builds the docs app and places the static Storybook output under `apps/docs/dist/storybook`. See Cloudflare's [Pages build configuration](https://developers.cloudflare.com/pages/configuration/build-configuration/) and [monorepo setup](https://developers.cloudflare.com/pages/configuration/monorepos/) for project settings.
+The workspace build compiles the UI package first, then builds the docs app and places the static Storybook output under `apps/docs/dist/storybook`. Pinning pnpm in Cloudflare keeps the build aligned with the version declared by this workspace. See Cloudflare's [Pages build configuration](https://developers.cloudflare.com/pages/configuration/build-configuration/) and [monorepo setup](https://developers.cloudflare.com/pages/configuration/monorepos/) for project settings.
