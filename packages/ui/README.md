@@ -2,6 +2,21 @@
 
 React UI components built with Radix UI and Tailwind CSS.
 
+## Components
+
+| Component | Purpose | Loan Engine-specific details |
+| --- | --- | --- |
+| `Alert` | Inline messages | Default, success, warning, and destructive states with appropriate live-region roles. |
+| `Badge` | Compact metadata and statuses | Semantic workflow variants and an optional decorative status dot. |
+| `Button` | Actions and navigation | Variants, sizes, loading state, and Radix Slot composition. |
+| `Card` | Related content | Compound header, content, action, and footer primitives. |
+| `Checkbox` | Form choices | Radix-backed, accessible checked and indeterminate states. |
+| `Input` | Single-line values | Focus, disabled, file, and invalid states. |
+| `Label` | Form field names | Radix-backed association with required and optional visual markers. |
+| `Select` | Single selection | Group labels, disabled options, and scroll controls. |
+| `Switch` | Immediate on/off preferences | Radix-backed control with standard and compact sizes. |
+| `Textarea` | Notes and explanations | Optional live character count through `showCount`. |
+
 ## Install
 
 ```bash

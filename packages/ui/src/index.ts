@@ -1,3 +1,11 @@
 export { Button, buttonVariants, type ButtonProps } from "./components/ui/button";
+export { Badge, badgeVariants, type BadgeProps } from "./components/ui/badge";
+export { Label, type LabelProps } from "./components/ui/label";
+export { Textarea, type TextareaProps } from "./components/ui/textarea";
+export { Switch, type SwitchProps } from "./components/ui/switch";
+export { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectScrollDownButton, SelectScrollUpButton, SelectSeparator, SelectTrigger, SelectValue, type SelectTriggerProps } from "./components/ui/select";
+export { Alert, AlertDescription, AlertTitle, alertVariants, type AlertProps } from "./components/ui/alert";
 export { Input } from "./components/ui/input";
+export { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./components/ui/card";
+export { Checkbox } from "./components/ui/checkbox";
 export { cn } from "./lib/utils";

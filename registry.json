@@ -213,6 +213,118 @@
           "target": "@ui/checkbox.tsx"
         }
       ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "Compact workflow and status labels with optional decorative dots.",
+      "registryDependencies": [
+        "@xxnnyy/utils"
+      ],
+      "dependencies": [
+        "class-variance-authority@^0.7.1"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/components/ui/badge.tsx",
+          "type": "registry:ui",
+          "target": "@ui/badge.tsx"
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "title": "Label",
+      "description": "Accessible form label with required and optional field markers.",
+      "registryDependencies": [
+        "@xxnnyy/utils"
+      ],
+      "dependencies": [
+        "radix-ui@^1.8.1"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/components/ui/label.tsx",
+          "type": "registry:ui",
+          "target": "@ui/label.tsx"
+        }
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "description": "Multi-line text field with an optional accessible live character count.",
+      "registryDependencies": [
+        "@xxnnyy/utils"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/components/ui/textarea.tsx",
+          "type": "registry:ui",
+          "target": "@ui/textarea.tsx"
+        }
+      ]
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "title": "Switch",
+      "description": "Accessible on/off control with compact and standard sizes.",
+      "registryDependencies": [
+        "@xxnnyy/utils"
+      ],
+      "dependencies": [
+        "radix-ui@^1.8.1"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/components/ui/switch.tsx",
+          "type": "registry:ui",
+          "target": "@ui/switch.tsx"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "description": "Accessible single selection with groups, disabled options, and scroll controls.",
+      "registryDependencies": [
+        "@xxnnyy/utils"
+      ],
+      "dependencies": [
+        "radix-ui@^1.8.1",
+        "lucide-react@^1.66.0"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/components/ui/select.tsx",
+          "type": "registry:ui",
+          "target": "@ui/select.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "description": "Inline operational messages with default, success, warning, and destructive variants.",
+      "registryDependencies": [
+        "@xxnnyy/utils"
+      ],
+      "dependencies": [
+        "class-variance-authority@^0.7.1"
+      ],
+      "files": [
+        {
+          "path": "packages/ui/src/components/ui/alert.tsx",
+          "type": "registry:ui",
+          "target": "@ui/alert.tsx"
+        }
+      ]
     }
   ]
 }
