@@ -7,9 +7,11 @@
     "dev": "pnpm --filter docs dev & pnpm --filter docs storybook",
     "dev:docs": "pnpm --filter docs dev",
     "dev:storybook": "pnpm --filter docs storybook",
-    "build": "pnpm --filter docs build",
+    "build": "pnpm run build:ui && pnpm --filter docs build && pnpm --filter docs build-storybook",
+    "build:docs": "pnpm --filter docs build",
     "build:ui": "pnpm --filter @xxnnyy/ui build",
-    "build:all": "pnpm run build:ui && pnpm --filter docs build",
+    "build:storybook": "pnpm --filter docs build-storybook",
+    "build:all": "pnpm run build",
     "lint": "pnpm --filter docs lint",
     "typecheck": "pnpm --filter docs typecheck"
   },
