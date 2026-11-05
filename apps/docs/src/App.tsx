@@ -104,15 +104,16 @@ function App() {
 
       <section className="principles-section" id="principles">
         <div className="principles-copy">
-          <span className="section-kicker">ONE SOURCE OF TRUTH</span>
-          <h2>Consistent by design.<br />Flexible in your hands.</h2>
-          <p>Built with accessible primitives and shared design tokens. Install the package for a maintained API, or use the shadcn registry to bring component source into your project.</p>
+          <span className="section-kicker">DESIGN FOUNDATIONS</span>
+          <h2>Professional by nature.<br />Trusted in the details.</h2>
+          <p>Loan Engine brings teams, deals, and loan operations into one connected workspace, from enquiry to maturity. These foundations turn that context into clear, consistent interfaces that support confident decisions and help reduce operational risk.</p>
           <a className="text-link purple-link" href={storybookUrl} target="_blank" rel="noreferrer">Read the component stories <ArrowIcon /></a>
         </div>
         <div className="principle-list">
-          <div><span>01</span><p><b>Accessible foundations</b><small>Keyboard-friendly interactions with Radix UI primitives.</small></p><CheckIcon /></div>
-          <div><span>02</span><p><b>Shared visual language</b><small>Consistent components and theme tokens across products.</small></p><CheckIcon /></div>
-          <div><span>03</span><p><b>Built for extension</b><small>Use the public API or adapt the source to your needs.</small></p><CheckIcon /></div>
+          <div><span>01</span><p><b>Design principles</b><small>Make complex lending work clear, consistent, and easy to review.</small></p><CheckIcon /></div>
+          <div><span>02</span><p><b>Visual language</b><small>Loan Engine purple (#34044e), quiet surfaces, legible data, and labeled status colors.</small></p><CheckIcon /></div>
+          <div><span>03</span><p><b>Interaction rules</b><small>Visible focus, specific feedback, and honest loading, error, and completion states.</small></p><CheckIcon /></div>
+          <div><span>04</span><p><b>Component rules</b><small>Accessible, typed, composable APIs with clear defaults and purposeful variants.</small></p><CheckIcon /></div>
         </div>
       </section>
 

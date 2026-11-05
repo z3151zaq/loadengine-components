@@ -1,6 +1,41 @@
-# xxnnyy UI
+# Loan Engine UI
 
 A React component library built with Radix UI and Tailwind CSS. The component source lives in `packages/ui`; Storybook documentation lives in `apps/docs` and reads stories colocated with their components.
+
+## Design foundations
+
+Loan Engine is an end-to-end workspace for private property lenders, connecting teams, deals, and loan operations from enquiry to maturity. This library translates that product context into interface foundations that feel professional and dependable, make important information easier to assess, and help teams manage operational risk. The principles below guide component design; they do not replace a lender's policies, approvals, or controls.
+
+### Design principles
+
+- **Make complex work clear.** Give loan, deal, and borrower information a clear hierarchy so people can understand status, context, and next steps quickly.
+- **Build confidence through consistency.** Use predictable patterns and terminology across origination, documents, and loan management.
+- **Support controlled operations.** Make consequential actions, review states, and exceptions visible; reduce ambiguity and avoid implying that an action has succeeded before it has.
+- **Respect the people doing the work.** Keep routine tasks efficient, interfaces accessible, and feedback specific and timely.
+
+### Visual language
+
+- **Brand anchor:** use Loan Engine purple (`#34044e`) for primary actions, key emphasis, and focus treatment. Reserve it for meaningful emphasis rather than decorating every surface.
+- **Quiet working surfaces:** pair the brand color with restrained neutrals, clear borders, and comfortable spacing so dense operational information stays legible.
+- **Purposeful hierarchy:** use consistent type sizes and weights to distinguish page titles, section labels, data, and supporting guidance. Align financial values and make units easy to scan.
+- **Semantic status colors:** use status color consistently and always pair it with a text label or icon. Color alone must not communicate risk, approval, or completion.
+- **Measured depth:** use subtle elevation and restrained rounding to distinguish layers without making a financial workspace feel casual.
+
+### Interaction rules
+
+- Make keyboard focus visible and preserve logical tab order; interactions must not depend on hover or color alone.
+- Give actions clear, specific labels. Distinguish primary, secondary, and destructive actions, and ask for confirmation when an action is consequential or difficult to reverse.
+- Show loading, success, empty, disabled, and error states when they apply. Explain errors near the affected control and give a useful recovery path where possible.
+- Keep validation and status feedback timely and specific. Never suggest that a save, approval, calculation, or transfer completed until the application confirms it.
+- Follow accessible names, roles, and states, and respect reduced-motion preferences.
+
+### Component rules
+
+- Provide one sensible default, with named variants and sizes for meaningful differences in purpose or emphasis.
+- Keep APIs typed, composable, and small. Use native HTML semantics and Radix UI primitives for accessible interaction patterns where appropriate.
+- Keep styling consistent through shared tokens and Tailwind utilities; avoid one-off visual overrides when an existing variant or token expresses the intent.
+- Document behavior that types cannot explain, and use stories to show the default, variants, important states, and representative composition.
+- Treat workflow-specific rules—such as lending eligibility, risk decisions, and approval authority—as application logic, not presentation behavior hidden inside generic UI components.
 
 ## Development workflow
 
