@@ -95,21 +95,21 @@ Publishing runs the package's `prepack` build. Release components in coherent ve
 
 See [`packages/ui/README.md`](packages/ui/README.md) for installation and consumer usage instructions.
 
-## Deploy to Cloudflare Pages
+## Deploy to Cloudflare Workers
 
-The root build command creates one static site containing both the introduction page and Storybook:
+The root build command creates the introduction page and Storybook in one static assets directory:
 
 ```bash
 pnpm build
 ```
 
-Cloudflare Pages serves the introduction page from `/` and Storybook from `/storybook/`. In the Cloudflare Pages project settings, use:
+The Wrangler config deploys `apps/docs/dist` as static assets for the `loadengine-components` Worker. The introduction page is served from `/` and Storybook from `/storybook/`. In the Cloudflare Worker build settings, use:
 
 | Setting | Value |
 | --- | --- |
 | Root directory | `/` (repository root) |
 | Build command | `pnpm build` |
-| Build output directory | `apps/docs/dist` |
+| Deploy command | `pnpm dlx wrangler@4.157.0 deploy` |
 | Environment variable | `PNPM_VERSION=12.16.1` |
 
-The workspace build compiles the UI package first, then builds the docs app and places the static Storybook output under `apps/docs/dist/storybook`. Pinning pnpm in Cloudflare keeps the build aligned with the version declared by this workspace. See Cloudflare's [Pages build configuration](https://developers.cloudflare.com/pages/configuration/build-configuration/) and [monorepo setup](https://developers.cloudflare.com/pages/configuration/monorepos/) for project settings.
+The workspace build compiles the UI package first, then builds the docs app and places the static Storybook output under `apps/docs/dist/storybook`. The Worker name and static asset directory are configured in [`wrangler.jsonc`](wrangler.jsonc). Set `CLOUDFLARE_API_TOKEN` to a token with the Workers Editor permission for the existing Worker. See Cloudflare's [Workers Static Assets](https://developers.cloudflare.com/workers/static-assets/) and [Workers permissions](https://developers.cloudflare.com/workers/authorization/workers/) documentation.
