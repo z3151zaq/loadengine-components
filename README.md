@@ -113,3 +113,21 @@ The Wrangler config deploys `apps/docs/dist` as static assets for the `loadengin
 | Environment variable | `PNPM_VERSION=12.16.1` |
 
 The workspace build compiles the UI package first, then builds the docs app and places the static Storybook output under `apps/docs/dist/storybook`. The Worker name and static asset directory are configured in [`wrangler.jsonc`](wrangler.jsonc). Set `CLOUDFLARE_API_TOKEN` to a token with the Workers Editor permission for the existing Worker. See Cloudflare's [Workers Static Assets](https://developers.cloudflare.com/workers/static-assets/) and [Workers permissions](https://developers.cloudflare.com/workers/authorization/workers/) documentation.
+
+## Use Storybook MCP with an AI agent
+
+Storybook MCP is enabled for component documentation, development workflows, and story testing. Start the local servers with:
+
+```bash
+pnpm dev
+```
+
+The MCP endpoint is `http://localhost:6006/mcp` while Storybook is running. Connect an MCP-compatible client to this HTTP endpoint. For clients supported by Storybook's MCP setup utility, run:
+
+```bash
+pnpm dlx mcp-add --type http --url "http://localhost:6006/mcp" --scope project
+```
+
+Choose the server name `loanengine-storybook` if the client prompts for one. The project-level agent rules are in [`AGENTS.md`](AGENTS.md). Ask the agent to use `docs-list` to discover components, `docs-show` to inspect a component's props and guidance, and `docs-show-story` or `stories-find-by-component` for examples before writing UI that consumes this library. The `test-run` tool can run Storybook story tests when available.
+
+The MCP endpoint is served by the local Storybook development server; do not expose it publicly without adding appropriate access controls. Storybook MCP is currently a preview feature, and its tools may change between Storybook releases.
